@@ -1,0 +1,17 @@
+platform :ios, ‘7.0’
+use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'JZQRCoderObjC' do
+
+#autolayout代码调整
+pod ‘PureLayout’
+
+#UILabel属性扩展
+pod ‘TTTAttributedLabel’
+
+#键盘遮挡输入框的解决办法
+pod ‘TPKeyboardAvoiding’
+
+
+end

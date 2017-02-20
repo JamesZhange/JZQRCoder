@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E347DE27816F98E21BCE84E65BE437 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755FAE73277FCB766461DDF0A4841EC5 /* CoreText.framework */; };
+		0392D3AEEE4951D755E5304CE2079E91 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3F252F50268040043A0BE7F71402F3 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0F49D7D9C4AAFA4A34F7CCBCD28EB7D4 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF5D76F33C73BA3B1DD5B5F2E8BBD3 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		268D0577D588084E4B3ADEBD2AB1EBA8 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9721954F08856E52273C4195715EB43C /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		281E76A06ED43065D5A8EA0A6904928A /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C595BB64DA65842711201E48346D54C /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31F53874E7DD0331B3F734FE18E61B0A /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A408027D3FB5655404B27FD65E0280DC /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BB1F47EEA52ACB26EF0BDEFCA6F1B4E /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D8A371F2961A80DE20E31EC1020E2B /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		574108D916BB83C05D967432E74150AC /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67355715447357718E1B8D9BC7818000 /* PureLayout-dummy.m */; };
+		5C7CAE699CACACF44D860FEA43CEAE42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9584A1F2D6F127A85944AD33BEA278D /* QuartzCore.framework */; };
+		5F8A76900E88296A78355AF4EA9CAEDA /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BDEBE116A763CEF88150CFF02FB01AB /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A0F354048006AB9E059822D60D9EA0 /* Pods-JZQRCoderObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49FA0D1D6B3C6D8F42C86A29D1EC7C81 /* Pods-JZQRCoderObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DB5FBD9328DE2B680EA84924987E539 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A48DB1C8052F1B842C0010D6FE3264 /* Foundation.framework */; };
+		711DBB7B03C8986603605AB2771ACA6F /* TTTAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B802E7AAF604CE45EC794EA5F4DB33 /* TTTAttributedLabel-dummy.m */; };
+		7A17D105DA89619CBCAF902DEAE4148D /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = BCA1C1F32993D938E227EAA9E73B8712 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B5CF409CD7F42D23125473FC3F23C92 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 542CEE153082507EFA9B0C9328275D0F /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		80A247C5D4BD2A5DAD1E133E29C3E40D /* TTTAttributedLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C8976DC3DF67B27F9AEDEC9AC722B1F /* TTTAttributedLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86633C8F041055D3292CBC05E375CBE9 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E64B903ED593FD3FA0CB0DC1801348 /* NSArray+PureLayout.m */; };
+		8B10A80C8BE2E7FA864AF5F93704912E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A48DB1C8052F1B842C0010D6FE3264 /* Foundation.framework */; };
+		8C330B2CB88D4394D136C117AAAEE776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FDCAA1EADCFD367E1698CDE25DE0DF /* UIKit.framework */; };
+		91327EB85B875D12AFFE7D71BD9F9883 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE9945DF6165085A948A518505CCEF /* TTTAttributedLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9823B35E97968CBB1FA7AAA2C5E0DF5B /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4A81BBB97539FE85913031B991AD68C /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99F8DC42CED54FFBBF9F52CCA9FDA61A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A48DB1C8052F1B842C0010D6FE3264 /* Foundation.framework */; };
+		9ADB7D406F6C7CD387869CF436D66926 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 889B88D1A8642AA0E174CD67B3565B6B /* NSLayoutConstraint+PureLayout.m */; };
+		A6569F9AD31D21646265ECA2C06A84A3 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F6746927D38DCAF309F0807715558874 /* ALView+PureLayout.m */; };
+		A7944CF8DAB8C62A53EC140D056714AE /* TTTAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E9BEF72E9311CC1F53881F94837B30 /* TTTAttributedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A851F0DD9C7724E951905D3DE151DC3E /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FC43388BC852FFEE3698B77C64A9A /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B14121F8382CC10F42F6F24EF4F8F042 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B638BFE0A254042FCED6DE7876F2D57 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5740BB23020E09B8CE8FE83AB9AF175 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9B0BA8F8B09ABDEE7250687976EEF0 /* TPKeyboardAvoiding-dummy.m */; };
+		C4451B221AD4B9FF0468F1FCAEAB18EE /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BBCE8F06E2C23C02275C909EA0B3DEC /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C47B4FE61278752A2D5D4D9537873E25 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = C26C11A6691E791E1774160594C41737 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA6D0EE98216BD225F0B69CDC8BB0CA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AA6E4C10206C3EE9ADFA1D694F1143 /* CoreGraphics.framework */; };
+		D68F1953A57F3A350065EDE15AAC18AC /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C1A4F16968D62E4E3F48E6AF5ADEFB /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DDCCE06BB9E54A9FA6D024680FA7D343 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 614A2442C0180E2D83B6C44DEA6D10E3 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E70F1B5FE596DF41F689704A50AD74D6 /* Pods-JZQRCoderObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 056CE6BC481A56C72243879405964CE2 /* Pods-JZQRCoderObjC-dummy.m */; };
+		FC608E0A5609DB29E7C7ADAE60011ECE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A48DB1C8052F1B842C0010D6FE3264 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		489D925168DA02CF44C748207F6703FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E526AF78E74FB3361ABC9653E23926A;
+			remoteInfo = TPKeyboardAvoiding;
+		};
+		5128FCE1D1D32BED947A9536A9B376D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EEEBD4CD505FA839CAA8CB6330BE0F1;
+			remoteInfo = PureLayout;
+		};
+		5EB91852F9369473CE933D977E4B2F28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBC6B4EEADA7EDE59BAF013EE49ECA4C;
+			remoteInfo = TTTAttributedLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056CE6BC481A56C72243879405964CE2 /* Pods-JZQRCoderObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JZQRCoderObjC-dummy.m"; sourceTree = "<group>"; };
+		091C68DB2E6AF81703BBFC5A2BDC3807 /* TTTAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTTAttributedLabel.xcconfig; sourceTree = "<group>"; };
+		09CF5D76F33C73BA3B1DD5B5F2E8BBD3 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		09D91F438A8481F09DA690CF44B5D792 /* TTTAttributedLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTTAttributedLabel.framework; path = TTTAttributedLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DCB44359593C43885209282CF86A497 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		14B802E7AAF604CE45EC794EA5F4DB33 /* TTTAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTTAttributedLabel-dummy.m"; sourceTree = "<group>"; };
+		14C1A4F16968D62E4E3F48E6AF5ADEFB /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		1BBCE8F06E2C23C02275C909EA0B3DEC /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		1E2F0D5837C1596EEAB7C5B091A875A4 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		1EF73A3BCD14A3696001AF3173B1F36C /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		29AA6E4C10206C3EE9ADFA1D694F1143 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		2A4FC43388BC852FFEE3698B77C64A9A /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		2F688E256EE0621DC6C6E4653AA7BF65 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30A48DB1C8052F1B842C0010D6FE3264 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32ABA519BE3AFD5AA7FD2A687D47A195 /* Pods-JZQRCoderObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JZQRCoderObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		3E6D7C3FE9EF660B3E61371E109B7177 /* Pods-JZQRCoderObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JZQRCoderObjC.modulemap"; sourceTree = "<group>"; };
+		444F115ABC8260B0A857B31E5E378837 /* TTTAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
+		4700ECCBA7AFD52226442AE657E65421 /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
+		49FA0D1D6B3C6D8F42C86A29D1EC7C81 /* Pods-JZQRCoderObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JZQRCoderObjC-umbrella.h"; sourceTree = "<group>"; };
+		4DBE9945DF6165085A948A518505CCEF /* TTTAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = TTTAttributedLabel/TTTAttributedLabel.m; sourceTree = "<group>"; };
+		4E18CAEA5052E70B1F77BA636880AE7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542CEE153082507EFA9B0C9328275D0F /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		5B638BFE0A254042FCED6DE7876F2D57 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		614A2442C0180E2D83B6C44DEA6D10E3 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		67355715447357718E1B8D9BC7818000 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		6C595BB64DA65842711201E48346D54C /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		6C8976DC3DF67B27F9AEDEC9AC722B1F /* TTTAttributedLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-umbrella.h"; sourceTree = "<group>"; };
+		707D053FE1643AA11D185752F41BFE47 /* Pods-JZQRCoderObjC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JZQRCoderObjC-acknowledgements.markdown"; sourceTree = "<group>"; };
+		755FAE73277FCB766461DDF0A4841EC5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		79D8A371F2961A80DE20E31EC1020E2B /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		85FDCAA1EADCFD367E1698CDE25DE0DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		86BDC4A460A0ACDE37F70EC3B5692AED /* Pods-JZQRCoderObjC-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JZQRCoderObjC-resources.sh"; sourceTree = "<group>"; };
+		889B88D1A8642AA0E174CD67B3565B6B /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		88AB7DE1ED0519379E191E75898468E1 /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		8BDEBE116A763CEF88150CFF02FB01AB /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		8C0CBA552E081C00C0F423506DEA6EE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9721954F08856E52273C4195715EB43C /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		A408027D3FB5655404B27FD65E0280DC /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		A9584A1F2D6F127A85944AD33BEA278D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A9E64B903ED593FD3FA0CB0DC1801348 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		AF3F252F50268040043A0BE7F71402F3 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		B0F26321FA918C9EC9030882491384C6 /* TTTAttributedLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TTTAttributedLabel.modulemap; sourceTree = "<group>"; };
+		B39E1B25C270FE4ACCF8C1B8BC575066 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		B65E2F199E214CE488B4C2982CF2284E /* Pods_JZQRCoderObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JZQRCoderObjC.framework; path = "Pods-JZQRCoderObjC.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC5722596D35DC4539F450273E9A313 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA1C1F32993D938E227EAA9E73B8712 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		C26C11A6691E791E1774160594C41737 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		D5E9BEF72E9311CC1F53881F94837B30 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
+		D73BDEE4C2387CDA6041745F9FFEE4B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD4586EDEDFBE10C98ED35F4A609F769 /* Pods-JZQRCoderObjC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JZQRCoderObjC-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4A81BBB97539FE85913031B991AD68C /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		EB9B0BA8F8B09ABDEE7250687976EEF0 /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		F6746927D38DCAF309F0807715558874 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		FA3FBECCF2DDD221E1F23DE89A92E07F /* Pods-JZQRCoderObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JZQRCoderObjC.release.xcconfig"; sourceTree = "<group>"; };
+		FB4D0E6B1C96BB1662C6BD8FC3910F07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFEDCB2E46729676AFE79865579B99EE /* Pods-JZQRCoderObjC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JZQRCoderObjC-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		393775E95B93F14D4FDA27B59828E131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB5FBD9328DE2B680EA84924987E539 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FB523EB15D393E3D7404946E043B4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6D0EE98216BD225F0B69CDC8BB0CA6 /* CoreGraphics.framework in Frameworks */,
+				01E347DE27816F98E21BCE84E65BE437 /* CoreText.framework in Frameworks */,
+				8B10A80C8BE2E7FA864AF5F93704912E /* Foundation.framework in Frameworks */,
+				5C7CAE699CACACF44D860FEA43CEAE42 /* QuartzCore.framework in Frameworks */,
+				8C330B2CB88D4394D136C117AAAEE776 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D101E30530FA80A16BB0EA40BFA94071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC608E0A5609DB29E7C7ADAE60011ECE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B023745163D78B652FBC32386102B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F8DC42CED54FFBBF9F52CCA9FDA61A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00409DA284C3A4F93392E97E38347ABE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C0CBA552E081C00C0F423506DEA6EE7 /* Info.plist */,
+				B39E1B25C270FE4ACCF8C1B8BC575066 /* TPKeyboardAvoiding.modulemap */,
+				4700ECCBA7AFD52226442AE657E65421 /* TPKeyboardAvoiding.xcconfig */,
+				EB9B0BA8F8B09ABDEE7250687976EEF0 /* TPKeyboardAvoiding-dummy.m */,
+				88AB7DE1ED0519379E191E75898468E1 /* TPKeyboardAvoiding-prefix.pch */,
+				A408027D3FB5655404B27FD65E0280DC /* TPKeyboardAvoiding-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+		198DE7F3719B3D804A13C0F8D739088C /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				5B638BFE0A254042FCED6DE7876F2D57 /* ALView+PureLayout.h */,
+				F6746927D38DCAF309F0807715558874 /* ALView+PureLayout.m */,
+				6C595BB64DA65842711201E48346D54C /* NSArray+PureLayout.h */,
+				A9E64B903ED593FD3FA0CB0DC1801348 /* NSArray+PureLayout.m */,
+				79D8A371F2961A80DE20E31EC1020E2B /* NSLayoutConstraint+PureLayout.h */,
+				889B88D1A8642AA0E174CD67B3565B6B /* NSLayoutConstraint+PureLayout.m */,
+				8BDEBE116A763CEF88150CFF02FB01AB /* PureLayout.h */,
+				C26C11A6691E791E1774160594C41737 /* PureLayout+Internal.h */,
+				09CF5D76F33C73BA3B1DD5B5F2E8BBD3 /* PureLayoutDefines.h */,
+				7387715E9431C42B563901E85EDFABED /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2357B0F38644467A148935873DB46F1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		365A4AD48FA70F3CCA5AACE0EDDBD15C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB4D0E6B1C96BB1662C6BD8FC3910F07 /* Info.plist */,
+				B0F26321FA918C9EC9030882491384C6 /* TTTAttributedLabel.modulemap */,
+				091C68DB2E6AF81703BBFC5A2BDC3807 /* TTTAttributedLabel.xcconfig */,
+				14B802E7AAF604CE45EC794EA5F4DB33 /* TTTAttributedLabel-dummy.m */,
+				444F115ABC8260B0A857B31E5E378837 /* TTTAttributedLabel-prefix.pch */,
+				6C8976DC3DF67B27F9AEDEC9AC722B1F /* TTTAttributedLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TTTAttributedLabel";
+			sourceTree = "<group>";
+		};
+		4482F46ABAEBE3CC6EC3601D1D749EBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				198DE7F3719B3D804A13C0F8D739088C /* PureLayout */,
+				9FBC2B99E3C8E2FFA775801264935776 /* TPKeyboardAvoiding */,
+				519838F081E784F377635E1B995E297C /* TTTAttributedLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		46F49581EDD00423A324B5BBA4AAAE76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B65E2F199E214CE488B4C2982CF2284E /* Pods_JZQRCoderObjC.framework */,
+				2F688E256EE0621DC6C6E4653AA7BF65 /* PureLayout.framework */,
+				BAC5722596D35DC4539F450273E9A313 /* TPKeyboardAvoiding.framework */,
+				09D91F438A8481F09DA690CF44B5D792 /* TTTAttributedLabel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		519838F081E784F377635E1B995E297C /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D5E9BEF72E9311CC1F53881F94837B30 /* TTTAttributedLabel.h */,
+				4DBE9945DF6165085A948A518505CCEF /* TTTAttributedLabel.m */,
+				365A4AD48FA70F3CCA5AACE0EDDBD15C /* Support Files */,
+			);
+			name = TTTAttributedLabel;
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		7387715E9431C42B563901E85EDFABED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D73BDEE4C2387CDA6041745F9FFEE4B1 /* Info.plist */,
+				1EF73A3BCD14A3696001AF3173B1F36C /* PureLayout.modulemap */,
+				1E2F0D5837C1596EEAB7C5B091A875A4 /* PureLayout.xcconfig */,
+				67355715447357718E1B8D9BC7818000 /* PureLayout-dummy.m */,
+				0DCB44359593C43885209282CF86A497 /* PureLayout-prefix.pch */,
+				E4A81BBB97539FE85913031B991AD68C /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				4482F46ABAEBE3CC6EC3601D1D749EBF /* Pods */,
+				46F49581EDD00423A324B5BBA4AAAE76 /* Products */,
+				C038E2884FC671FA359A8A691A2B039C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9FBC2B99E3C8E2FFA775801264935776 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				1BBCE8F06E2C23C02275C909EA0B3DEC /* TPKeyboardAvoidingCollectionView.h */,
+				542CEE153082507EFA9B0C9328275D0F /* TPKeyboardAvoidingCollectionView.m */,
+				BCA1C1F32993D938E227EAA9E73B8712 /* TPKeyboardAvoidingScrollView.h */,
+				2A4FC43388BC852FFEE3698B77C64A9A /* TPKeyboardAvoidingScrollView.m */,
+				9721954F08856E52273C4195715EB43C /* TPKeyboardAvoidingTableView.h */,
+				AF3F252F50268040043A0BE7F71402F3 /* TPKeyboardAvoidingTableView.m */,
+				614A2442C0180E2D83B6C44DEA6D10E3 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				14C1A4F16968D62E4E3F48E6AF5ADEFB /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				00409DA284C3A4F93392E97E38347ABE /* Support Files */,
+			);
+			name = TPKeyboardAvoiding;
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		C038E2884FC671FA359A8A691A2B039C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC3B572CA3426C7333503E82CA066E /* Pods-JZQRCoderObjC */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D2357B0F38644467A148935873DB46F1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				29AA6E4C10206C3EE9ADFA1D694F1143 /* CoreGraphics.framework */,
+				755FAE73277FCB766461DDF0A4841EC5 /* CoreText.framework */,
+				30A48DB1C8052F1B842C0010D6FE3264 /* Foundation.framework */,
+				A9584A1F2D6F127A85944AD33BEA278D /* QuartzCore.framework */,
+				85FDCAA1EADCFD367E1698CDE25DE0DF /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FDEC3B572CA3426C7333503E82CA066E /* Pods-JZQRCoderObjC */ = {
+			isa = PBXGroup;
+			children = (
+				4E18CAEA5052E70B1F77BA636880AE7B /* Info.plist */,
+				3E6D7C3FE9EF660B3E61371E109B7177 /* Pods-JZQRCoderObjC.modulemap */,
+				707D053FE1643AA11D185752F41BFE47 /* Pods-JZQRCoderObjC-acknowledgements.markdown */,
+				DD4586EDEDFBE10C98ED35F4A609F769 /* Pods-JZQRCoderObjC-acknowledgements.plist */,
+				056CE6BC481A56C72243879405964CE2 /* Pods-JZQRCoderObjC-dummy.m */,
+				FFEDCB2E46729676AFE79865579B99EE /* Pods-JZQRCoderObjC-frameworks.sh */,
+				86BDC4A460A0ACDE37F70EC3B5692AED /* Pods-JZQRCoderObjC-resources.sh */,
+				49FA0D1D6B3C6D8F42C86A29D1EC7C81 /* Pods-JZQRCoderObjC-umbrella.h */,
+				32ABA519BE3AFD5AA7FD2A687D47A195 /* Pods-JZQRCoderObjC.debug.xcconfig */,
+				FA3FBECCF2DDD221E1F23DE89A92E07F /* Pods-JZQRCoderObjC.release.xcconfig */,
+			);
+			name = "Pods-JZQRCoderObjC";
+			path = "Target Support Files/Pods-JZQRCoderObjC";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8F67E9473AB33BC3D01C0C77957CB028 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A0F354048006AB9E059822D60D9EA0 /* Pods-JZQRCoderObjC-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77460052E8CC6DC6101E3DC8EF5CEC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A247C5D4BD2A5DAD1E133E29C3E40D /* TTTAttributedLabel-umbrella.h in Headers */,
+				A7944CF8DAB8C62A53EC140D056714AE /* TTTAttributedLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE0A003380ACB40C07E5F196CA78ACE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F53874E7DD0331B3F734FE18E61B0A /* TPKeyboardAvoiding-umbrella.h in Headers */,
+				C4451B221AD4B9FF0468F1FCAEAB18EE /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				7A17D105DA89619CBCAF902DEAE4148D /* TPKeyboardAvoidingScrollView.h in Headers */,
+				268D0577D588084E4B3ADEBD2AB1EBA8 /* TPKeyboardAvoidingTableView.h in Headers */,
+				DDCCE06BB9E54A9FA6D024680FA7D343 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5352ACEB30D2863F4F879A81589141C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14121F8382CC10F42F6F24EF4F8F042 /* ALView+PureLayout.h in Headers */,
+				281E76A06ED43065D5A8EA0A6904928A /* NSArray+PureLayout.h in Headers */,
+				4BB1F47EEA52ACB26EF0BDEFCA6F1B4E /* NSLayoutConstraint+PureLayout.h in Headers */,
+				C47B4FE61278752A2D5D4D9537873E25 /* PureLayout+Internal.h in Headers */,
+				9823B35E97968CBB1FA7AAA2C5E0DF5B /* PureLayout-umbrella.h in Headers */,
+				5F8A76900E88296A78355AF4EA9CAEDA /* PureLayout.h in Headers */,
+				0F49D7D9C4AAFA4A34F7CCBCD28EB7D4 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03D84F00B311A0E6BBD2796135B5F33F /* Pods-JZQRCoderObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C41B3622DBCE95174DE6D27A51FF4A1 /* Build configuration list for PBXNativeTarget "Pods-JZQRCoderObjC" */;
+			buildPhases = (
+				60481DC54F67D5A811E0D176407BD56D /* Sources */,
+				D101E30530FA80A16BB0EA40BFA94071 /* Frameworks */,
+				8F67E9473AB33BC3D01C0C77957CB028 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE327B2C09F7DF7A76EA5B891C618F06 /* PBXTargetDependency */,
+				9332A01D4244E088576913F65ECB8809 /* PBXTargetDependency */,
+				EFCF8B4A3526F7AB90527ED7514C9C9B /* PBXTargetDependency */,
+			);
+			name = "Pods-JZQRCoderObjC";
+			productName = "Pods-JZQRCoderObjC";
+			productReference = B65E2F199E214CE488B4C2982CF2284E /* Pods_JZQRCoderObjC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2E526AF78E74FB3361ABC9653E23926A /* TPKeyboardAvoiding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CA59EF695B80FECAE9EDE1189F6F7DB /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildPhases = (
+				A80BFB6674EDDBFCD7CBFF1C6B3CC16A /* Sources */,
+				D1B023745163D78B652FBC32386102B9 /* Frameworks */,
+				BCE0A003380ACB40C07E5F196CA78ACE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPKeyboardAvoiding;
+			productName = TPKeyboardAvoiding;
+			productReference = BAC5722596D35DC4539F450273E9A313 /* TPKeyboardAvoiding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2EEEBD4CD505FA839CAA8CB6330BE0F1 /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97089396BBDB82477A25FA5CA22B3548 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				CBB5A57A4D5E9672E7CED5175718C442 /* Sources */,
+				393775E95B93F14D4FDA27B59828E131 /* Frameworks */,
+				D5352ACEB30D2863F4F879A81589141C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 2F688E256EE0621DC6C6E4653AA7BF65 /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBC6B4EEADA7EDE59BAF013EE49ECA4C /* TTTAttributedLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E258665E64F1FF0CC69360D6D6BC6E2C /* Build configuration list for PBXNativeTarget "TTTAttributedLabel" */;
+			buildPhases = (
+				CE7747FD41FEE042AB6A7F087DD5F50C /* Sources */,
+				B0FB523EB15D393E3D7404946E043B4F /* Frameworks */,
+				A77460052E8CC6DC6101E3DC8EF5CEC8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTTAttributedLabel;
+			productName = TTTAttributedLabel;
+			productReference = 09D91F438A8481F09DA690CF44B5D792 /* TTTAttributedLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 46F49581EDD00423A324B5BBA4AAAE76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03D84F00B311A0E6BBD2796135B5F33F /* Pods-JZQRCoderObjC */,
+				2EEEBD4CD505FA839CAA8CB6330BE0F1 /* PureLayout */,
+				2E526AF78E74FB3361ABC9653E23926A /* TPKeyboardAvoiding */,
+				CBC6B4EEADA7EDE59BAF013EE49ECA4C /* TTTAttributedLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60481DC54F67D5A811E0D176407BD56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70F1B5FE596DF41F689704A50AD74D6 /* Pods-JZQRCoderObjC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80BFB6674EDDBFCD7CBFF1C6B3CC16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5740BB23020E09B8CE8FE83AB9AF175 /* TPKeyboardAvoiding-dummy.m in Sources */,
+				7B5CF409CD7F42D23125473FC3F23C92 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				A851F0DD9C7724E951905D3DE151DC3E /* TPKeyboardAvoidingScrollView.m in Sources */,
+				0392D3AEEE4951D755E5304CE2079E91 /* TPKeyboardAvoidingTableView.m in Sources */,
+				D68F1953A57F3A350065EDE15AAC18AC /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB5A57A4D5E9672E7CED5175718C442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6569F9AD31D21646265ECA2C06A84A3 /* ALView+PureLayout.m in Sources */,
+				86633C8F041055D3292CBC05E375CBE9 /* NSArray+PureLayout.m in Sources */,
+				9ADB7D406F6C7CD387869CF436D66926 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				574108D916BB83C05D967432E74150AC /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7747FD41FEE042AB6A7F087DD5F50C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711DBB7B03C8986603605AB2771ACA6F /* TTTAttributedLabel-dummy.m in Sources */,
+				91327EB85B875D12AFFE7D71BD9F9883 /* TTTAttributedLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9332A01D4244E088576913F65ECB8809 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = 2E526AF78E74FB3361ABC9653E23926A /* TPKeyboardAvoiding */;
+			targetProxy = 489D925168DA02CF44C748207F6703FB /* PBXContainerItemProxy */;
+		};
+		EFCF8B4A3526F7AB90527ED7514C9C9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTTAttributedLabel;
+			target = CBC6B4EEADA7EDE59BAF013EE49ECA4C /* TTTAttributedLabel */;
+			targetProxy = 5EB91852F9369473CE933D977E4B2F28 /* PBXContainerItemProxy */;
+		};
+		FE327B2C09F7DF7A76EA5B891C618F06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 2EEEBD4CD505FA839CAA8CB6330BE0F1 /* PureLayout */;
+			targetProxy = 5128FCE1D1D32BED947A9536A9B376D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22DEB6376C155925A472A534AF433450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4700ECCBA7AFD52226442AE657E65421 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78737AB1B3760FCF1199A8AC4E1EB5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091C68DB2E6AF81703BBFC5A2BDC3807 /* TTTAttributedLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTTAttributedLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TTTAttributedLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84E849AEE8D6215621132402E1DCC0AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2F0D5837C1596EEAB7C5B091A875A4 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96F056D8C76415876B24DE84B7B3F64C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4700ECCBA7AFD52226442AE657E65421 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAB2F0B4B8A0A84EBF7DE5AB1D029CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091C68DB2E6AF81703BBFC5A2BDC3807 /* TTTAttributedLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTTAttributedLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TTTAttributedLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2477527819C27D3CB8B10F48013935B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32ABA519BE3AFD5AA7FD2A687D47A195 /* Pods-JZQRCoderObjC.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JZQRCoderObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JZQRCoderObjC/Pods-JZQRCoderObjC.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JZQRCoderObjC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD59A12E32B65FC3C7021AEFDAC9EAD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3FBECCF2DDD221E1F23DE89A92E07F /* Pods-JZQRCoderObjC.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JZQRCoderObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JZQRCoderObjC/Pods-JZQRCoderObjC.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JZQRCoderObjC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF7953F66E785E8876EB4D370D777D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EB2781C4EEC513C15CECABE70B0F4D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2F0D5837C1596EEAB7C5B091A875A4 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CA59EF695B80FECAE9EDE1189F6F7DB /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F056D8C76415876B24DE84B7B3F64C /* Debug */,
+				22DEB6376C155925A472A534AF433450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7953F66E785E8876EB4D370D777D50 /* Debug */,
+				79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C41B3622DBCE95174DE6D27A51FF4A1 /* Build configuration list for PBXNativeTarget "Pods-JZQRCoderObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2477527819C27D3CB8B10F48013935B /* Debug */,
+				CD59A12E32B65FC3C7021AEFDAC9EAD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97089396BBDB82477A25FA5CA22B3548 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E849AEE8D6215621132402E1DCC0AB /* Debug */,
+				EB2781C4EEC513C15CECABE70B0F4D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E258665E64F1FF0CC69360D6D6BC6E2C /* Build configuration list for PBXNativeTarget "TTTAttributedLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB2F0B4B8A0A84EBF7DE5AB1D029CA0 /* Debug */,
+				78737AB1B3760FCF1199A8AC4E1EB5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
