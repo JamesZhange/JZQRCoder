@@ -59,7 +59,7 @@
 /* Begin PBXFileReference section */
 		1CC98046314130642C452FEB /* Pods-JZQRCoderObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZQRCoderObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JZQRCoderObjC/Pods-JZQRCoderObjC.debug.xcconfig"; sourceTree = "<group>"; };
 		51E3201CB47E85C6E4A3C057 /* Pods_JZQRCoderObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JZQRCoderObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		835929E21E35E47D00D811FD /* JZQRCoderObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZQRCoderObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		835929E21E35E47D00D811FD /* JZ QRC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JZ QRC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		835929E61E35E47D00D811FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		835929E81E35E47D00D811FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		835929E91E35E47D00D811FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 		835929E31E35E47D00D811FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				835929E21E35E47D00D811FD /* JZQRCoderObjC.app */,
+				835929E21E35E47D00D811FD /* JZ QRC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -394,7 +394,7 @@
 			);
 			name = JZQRCoderObjC;
 			productName = JZQRCoderObjC;
-			productReference = 835929E21E35E47D00D811FD /* JZQRCoderObjC.app */;
+			productReference = 835929E21E35E47D00D811FD /* JZ QRC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -662,7 +662,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JamesZhang.JZQRCoderObjC;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "JZ QRC";
 			};
 			name = Debug;
 		};
@@ -676,7 +676,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JamesZhang.JZQRCoderObjC;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "JZ QRC";
 			};
 			name = Release;
 		};
